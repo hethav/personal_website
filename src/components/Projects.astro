@@ -1,0 +1,55 @@
+---
+import ProjectCard from './ProjectCard.astro';
+
+const projects = [
+  {
+    index: 'MOD_01',
+    title: 'Kube_Hydra',
+    description:
+      'High-availability orchestration layer for distributed micro-clusters. Built with Go and Rust.',
+    tags: ['GO', 'K8S', 'GRPC'],
+  },
+  {
+    index: 'MOD_02',
+    title: 'Void_Vault',
+    description:
+      'Encrypted cold-storage engine for petabyte-scale metadata. Zero-knowledge architecture.',
+    tags: ['RUST', 'AES-256'],
+  },
+  {
+    index: 'MOD_03',
+    title: 'Flux_Relay',
+    description:
+      'Low-latency edge messaging bus with sub-millisecond propagation across global nodes.',
+    tags: ['ELIXIR', 'UDP'],
+  },
+  {
+    index: 'MOD_04',
+    title: 'Synth_Node',
+    description:
+      'Auto-scaling serverless environment specifically tuned for heavy computational ML workloads.',
+    tags: ['PYTHON', 'CUDA'],
+  },
+];
+---
+
+<section class="px-6 md:px-12 py-20" id="projects">
+  <div
+    class="flex justify-between items-end mb-12 border-l-4 border-primary-container pl-6"
+  >
+    <div>
+      <h2
+        class="text-3xl font-headline font-bold text-primary tracking-tighter uppercase mb-2"
+      >
+        Deployed_Modules
+      </h2>
+      <p class="text-on-surface-variant font-mono text-xs">
+        // ACTIVE PRODUCTION SERVICES
+      </p>
+    </div>
+    <span class="text-on-surface-variant font-mono text-[10px]">COUNT: 04</span>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    {projects.map((p) => <ProjectCard {...p} />)}
+  </div>
+</section>

@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-fixed: #72ff70;
+  --color-surface: #131313;
+  --color-surface-container-high: #2a2a2a;
+  --color-surface-container-highest: #353534;
+  --color-surface-bright: #3a3939;
+  --color-surface-container-low: #1c1b1b;
+  --color-surface-container: #201f1f;
+  --color-surface-container-lowest: #0e0e0e;
+  --color-surface-variant: #353534;
+  --color-on-surface: #e5e2e1;
+  --color-on-surface-variant: #b9ccb2;
+  --color-on-primary: #003907;
+  --color-primary: #ebffe2;
+  --color-primary-container: #00FF41;
+  --color-secondary: #99d688;
+  --color-secondary-container: #1e5416;
+  --color-on-secondary-container: #8cc77b;
+  --color-outline: #84967e;
+  --color-outline-variant: #3b4b37;
+  --color-background: #131313;
+  --color-on-background: #e5e2e1;
+  --color-error: #ffb4ab;
+
+  --font-headline: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-label: 'Space Grotesk', sans-serif;
+}
+
+/* Scanline CRT overlay */
+.scanline-overlay {
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
+    linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
+
+/* Glow hover effect for cards */
+.glow-border:hover {
+  box-shadow: 0 0 15px rgba(0, 255, 65, 0.4);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #131313;
+}
+::-webkit-scrollbar-thumb {
+  background: #00ff41;
+}
