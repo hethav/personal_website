@@ -3,32 +3,40 @@ import ProjectCard from './ProjectCard.astro';
 
 const projects = [
   {
-    index: 'MOD_01',
-    title: 'Kube_Hydra',
+    index: '01',
+    role: 'Lead PM',
+    title: 'Engine.tech',
+    link: 'https://engine.tech/embedded-marketplace/partner-network',
     description:
-      'High-availability orchestration layer for distributed micro-clusters. Built with Go and Rust.',
-    tags: ['GO', 'K8S', 'GRPC'],
+      'Embeddable financial marketplaces powering 1,300+ partners with AI-driven monetization, powering 400M inquiries every year and generating $160M+ in annual enterprise revenue.',
+    tags: ['FINTECH', 'AI/ML', 'MARKETPLACE'],
   },
   {
-    index: 'MOD_02',
-    title: 'Void_Vault',
+    index: '02',
+    role: 'Head of Product',
+    title: 'Prodigy.fi',
+    link: 'https://prodigy.fi/',
     description:
-      'Encrypted cold-storage engine for petabyte-scale metadata. Zero-knowledge architecture.',
-    tags: ['RUST', 'AES-256'],
+      'On-chain derivatives marketplace turning volatility into yield via fully collateralized dual investment vaults. Live on Base and Berachain with $5M raised.',
+    tags: ['DEFI', 'WEB3', 'DERIVATIVES'],
   },
   {
-    index: 'MOD_03',
-    title: 'Flux_Relay',
+    index: '03',
+    role: 'Product Manager',
+    title: 'Ocado Smart Platform',
+    link: 'https://www.ocadogroup.com/our-solutions/online-grocery',
     description:
-      'Low-latency edge messaging bus with sub-millisecond propagation across global nodes.',
-    tags: ['ELIXIR', 'UDP'],
+      'End-to-end online grocery platform combining robotics, AI and supply chain automation. Sold to 13 global retail partners across 25 live sites and 1,000+ stores worldwide.',
+    tags: ['ROBOTICS', 'AI/ML', 'SUPPLY CHAIN'],
   },
   {
-    index: 'MOD_04',
-    title: 'Synth_Node',
+    index: '04',
+    role: 'Consultant',
+    title: 'Roland Berger',
+    link: 'https://www.rolandberger.com/en/Expertise/Services/Digital/Roland-Berger-Digital.html',
     description:
-      'Auto-scaling serverless environment specifically tuned for heavy computational ML workloads.',
-    tags: ['PYTHON', 'CUDA'],
+      'Strategy consulting at Europe\'s largest independent firm, focusing on digital transformation, AI strategy, and IT modernization.',
+    tags: ['STRATEGY', 'DIGITAL', 'AI'],
   },
 ];
 ---
@@ -39,13 +47,10 @@ const projects = [
   >
     <div>
       <h2
-        class="text-3xl font-headline font-bold text-primary tracking-tighter uppercase mb-2"
+        class="text-3xl font-headline font-bold text-primary tracking-tighter uppercase"
       >
-        Deployed_Modules
+        EXPERIENCE
       </h2>
-      <p class="text-on-surface-variant font-mono text-xs">
-        // ACTIVE PRODUCTION SERVICES
-      </p>
     </div>
     <span class="text-on-surface-variant font-mono text-[10px]">COUNT: 04</span>
   </div>
